@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+
+	<title>Crear Usuarios</title>
+	<link rel="stylesheet" href="Estilos.css">
+
+	<script type="text/javascript" src="Funciones.js"></script>
+
+<body>
+
+	<h2>Crear Usuarios</h2> 
+		<form>
+			<fieldset>
+				<legend>Crear Usuarios</legend>
+			<p>Numero de Identificacion:
+			<input type="Text" name="ndeidentificacion"><br>
+			</p>
+			<p>
+			Nombre:
+			<input type="Text" name="nombre"><br>
+			</p>
+			<p>
+			Apellidos:
+			<input type="Text" name="apellidos"><br>
+			</p>
+			<p>
+			Cargo:
+			<select name="cargo">
+				<option value="1">Seleccione</option>
+				<option value="2">Administrador</option>
+				<option value="3">Vendedor</option>
+			</select><br>
+			</p>
+			<p>
+			Tel Fijo:
+			<input type="Text" name="telfijo"><br>
+			</p>
+			<p>
+			Movil:
+			<input type="Text" name="movil"><br>
+			</p>
+			<p>
+			Estado:
+			Activo: <input type="checkbox" id="activo" onclick="myFunction()">
+			Inactivo: <input type="checkbox" id="inactivo" onclick="myFunction()">	
+			</p>
+		
+			<input type="button" value="Guardar" onclick="alert('¡has pulsado este boton Guardar!');">
+			<input type="button" value="Limpiar" onclick="validacion()">
+			
+			</fieldset>
+
+</body>
+</html>
